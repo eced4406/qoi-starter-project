@@ -33,10 +33,10 @@ option(BUILD_IMAGE_VIEWER
 )
 option(BUILD_INFO_TOOL "Build image info tool" ON)
 option(BUILD_BENCHMARK "Build benchmark test" ON)
-option(ENABLE_WARNINGS "Enable compiler warnings" ON)
+option(ENABLE_WARNINGS "Enable compiler warnings" OFF)
 option(ENABLE_WARNINGS_AS_ERRORS "Elevate compiler warnings to errors" OFF)
-option(ENABLE_CPPCHECK "Enable cppcheck static analysis" ON)
-option(ENABLE_CLANG_TIDY "Enable ClangTidy static analysis" ON)
+option(ENABLE_CPPCHECK "Enable cppcheck static analysis" OFF)
+option(ENABLE_CLANG_TIDY "Enable ClangTidy static analysis" OFF)
 
 # Enable addition warnings if requested
 if(ENABLE_WARNINGS)
