@@ -94,7 +94,7 @@ int main(int argc, char *argv[]) {
 
   printf("first pixel:       0x%08x\n", ((uint32_t const *)pixels)[0]);
   printf("middle pixel:      0x%08x\n", ((uint32_t const *)pixels)[desc.width * desc.height / 2]);
-  printf("last pixel:        0x%08x\n", ((uint32_t const *)pixels)[desc.width * desc.height]);
+  printf("last pixel:        0x%08x\n", ((uint32_t const *)pixels)[desc.width * desc.height - 1]);
 
   free(pixels);
 }
