@@ -85,6 +85,7 @@ int main(int argc, char *argv[]) {
 
   if (!pixels) {
     puts("failed to decode image");
+    return;
   }
 
   printf("image width:       %10" PRIu32 "\n", desc.width);
